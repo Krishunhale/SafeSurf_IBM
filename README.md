@@ -6,7 +6,7 @@
 
 
 SafeSurf is a beginner-friendly cybersecurity web application that detects phishing URLs and spam emails using rule-based detection logic. Built as an academic project by second-year BTech IT students.
-🌐 Live Demo: safesurf-ibm.onrender.com
+🌐 Live Demo: [safesurf-ibm.onrender.com](https://safesurf-ibm.onrender.com/)
 About the Project
 SafeSurf is a web-based cybersecurity tool designed to help everyday users identify:
 Phishing URLs — fake websites designed to steal your credentials
