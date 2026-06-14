@@ -8,6 +8,26 @@ const ICONS = {
     Malicious: "🚨"
 };
 
+function updateHomeNavActiveState() {
+    const aboutSection = document.getElementById("about");
+    if (!aboutSection) return;
+
+    const navLinks = document.querySelectorAll(".navbar-links a");
+    const homeLink = document.querySelector('.navbar-links a[href="/"]');
+    const aboutLink = document.querySelector('.navbar-links a[href="#about"], .navbar-links a[href="/#about"]');
+
+    navLinks.forEach(link => link.classList.remove("active"));
+
+    if (window.location.hash === "#about") {
+        aboutLink?.classList.add("active");
+    } else {
+        homeLink?.classList.add("active");
+    }
+}
+
+window.addEventListener("DOMContentLoaded", updateHomeNavActiveState);
+window.addEventListener("hashchange", updateHomeNavActiveState);
+
 // Show loading state on button
 function setLoading(isLoading) {
     const btn = document.getElementById("analyzeBtn");
