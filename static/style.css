@@ -75,44 +75,6 @@ a {
     color: white;
 }
 
-.navbar-auth {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-}
-
-.btn-login {
-    padding: 8px 20px;
-    border: 1.5px solid #3b82f6;
-    border-radius: 6px;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    background: transparent;
-    transition: all 0.2s;
-}
-
-.btn-login:hover {
-    background: #3b82f6;
-}
-
-.btn-signup {
-    padding: 8px 20px;
-    background-color: #3b82f6;
-    border: none;
-    border-radius: 6px;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-
-.btn-signup:hover {
-    background-color: #2563eb;
-}
-
 /* ── Hero Section ── */
 .hero {
     display: flex;
@@ -347,64 +309,6 @@ a {
     color: #4b5563;
 }
 
-.auth-section {
-    min-height: calc(100vh - 70px);
-    background: linear-gradient(135deg, #0d1426 0%, #1a2340 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 20px;
-}
-
-.auth-card {
-    background: #111827;
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 16px;
-    padding: 42px;
-    width: 100%;
-    max-width: 460px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
-}
-
-.auth-card h2 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 8px;
-}
-
-.auth-card .description {
-    color: #9aaac8;
-    font-size: 15px;
-    margin-bottom: 28px;
-}
-
-.auth-message {
-    background: rgba(59,130,246,0.12);
-    border: 1px solid rgba(59,130,246,0.35);
-    border-radius: 8px;
-    color: #bfdbfe;
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    padding: 12px 14px;
-}
-
-.auth-switch {
-    color: #9aaac8;
-    font-size: 14px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.auth-switch a {
-    color: #60a5fa;
-    font-weight: 600;
-}
-
-.active-auth {
-    box-shadow: 0 0 0 2px rgba(59,130,246,0.3);
-}
-
 .analyze-btn {
     width: 100%;
     padding: 14px;
@@ -571,5 +475,4 @@ a {
     .features { padding: 60px 24px; }
     .features-grid { grid-template-columns: 1fr; }
     .checker-card { padding: 28px 20px; }
-    .auth-card { padding: 30px 22px; }
 }

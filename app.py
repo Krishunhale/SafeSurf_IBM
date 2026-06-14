@@ -29,24 +29,6 @@ def email_checker():
     return render_template("email_checker.html")
 
 
-@app.route("/login", methods=["GET", "POST"])
-def login():
-    """Serves the Login page."""
-    message = None
-    if request.method == "POST":
-        message = "Login form submitted. Connect a database to enable real accounts."
-    return render_template("login.html", message=message)
-
-
-@app.route("/signup", methods=["GET", "POST"])
-def signup():
-    """Serves the Sign Up page."""
-    message = None
-    if request.method == "POST":
-        message = "Sign up form submitted. Connect a database to save new users."
-    return render_template("signup.html", message=message)
-
-
 # ─────────────────────────────────────────────
 # API ROUTES (handle analysis requests)
 # ─────────────────────────────────────────────
