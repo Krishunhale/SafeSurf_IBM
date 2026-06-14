@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeSurf - Sign Up</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <span class="shield-icon">🛡️</span>
+            SafeSurf
+        </div>
+        <ul class="navbar-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/url-checker">URL Checker</a></li>
+            <li><a href="/email-checker">Email Checker</a></li>
+            <li><a href="/#about">About</a></li>
+        </ul>
+        <div class="navbar-auth">
+            <a href="/login" class="btn-login">Login</a>
+            <a href="/signup" class="btn-signup active-auth">Sign Up</a>
+        </div>
+    </nav>
+
+    <section class="auth-section">
+        <form class="auth-card" method="POST" action="/signup">
+            <h2>Create Account</h2>
+            <p class="description">Start using SafeSurf with your own account.</p>
+
+            {% if message %}
+            <p class="auth-message">{{ message }}</p>
+            {% endif %}
+
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+            </div>
+
+            <button class="analyze-btn" type="submit">Sign Up</button>
+            <p class="auth-switch">Already have an account? <a href="/login">Login</a></p>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 SafeSurf. Built for academic purposes. Stay safe online. 🛡️</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeSurf - Login</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <span class="shield-icon">🛡️</span>
+            SafeSurf
+        </div>
+        <ul class="navbar-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/url-checker">URL Checker</a></li>
+            <li><a href="/email-checker">Email Checker</a></li>
+            <li><a href="/#about">About</a></li>
+        </ul>
+        <div class="navbar-auth">
+            <a href="/login" class="btn-login active-auth">Login</a>
+            <a href="/signup" class="btn-signup">Sign Up</a>
+        </div>
+    </nav>
+
+    <section class="auth-section">
+        <form class="auth-card" method="POST" action="/login">
+            <h2>Login</h2>
+            <p class="description">Access your SafeSurf account.</p>
+
+            {% if message %}
+            <p class="auth-message">{{ message }}</p>
+            {% endif %}
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <button class="analyze-btn" type="submit">Login</button>
+            <p class="auth-switch">New to SafeSurf? <a href="/signup">Create an account</a></p>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 SafeSurf. Built for academic purposes. Stay safe online. 🛡️</p>
+    </footer>
+
+</body>
+</html>

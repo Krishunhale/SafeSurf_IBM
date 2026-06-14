@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeSurf – URL Checker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- ── Navbar ── -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <span class="shield-icon">🛡️</span>
+            SafeSurf
+        </div>
+        <ul class="navbar-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/url-checker" class="active">URL Checker</a></li>
+            <li><a href="/email-checker">Email Checker</a></li>
+            <li><a href="/#about">About</a></li>
+        </ul>
+        <div class="navbar-auth">
+            <a href="/login" class="btn-login">Login</a>
+            <a href="/signup" class="btn-signup">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- ── Checker Section ── -->
+    <section class="checker-section">
+        <div class="checker-card">
+            <h2>🔗 URL Phishing Checker</h2>
+            <p class="description">
+                Enter any URL below to check if it is safe, suspicious, or a phishing attempt.
+            </p>
+
+            <div class="input-group">
+                <label for="urlInput">Enter URL</label>
+                <input
+                    type="text"
+                    id="urlInput"
+                    placeholder="e.g. https://example.com or http://free-prize.com/login"
+                    onkeydown="if(event.key === 'Enter') analyzeURL()"
+                />
+            </div>
+
+            <button class="analyze-btn" onclick="analyzeURL()" id="analyzeBtn">
+                <div class="spinner" id="spinner"></div>
+                <span id="btnText">🔍 Analyze URL</span>
+            </button>
+
+            <!-- Result Box -->
+            <div class="result-box" id="resultBox">
+                <div class="result-header">
+                    <span class="result-icon" id="resultIcon"></span>
+                    <span class="result-title" id="resultTitle"></span>
+                </div>
+                <p class="result-score" id="resultScore"></p>
+                <div class="score-bar-bg">
+                    <div class="score-bar-fill" id="scoreBar" style="width: 0%"></div>
+                </div>
+                <p class="reasons-title">Why was this flagged?</p>
+                <ul class="reasons-list" id="reasonsList"></ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer class="footer">
+        <p>© 2026 SafeSurf. Built for academic purposes. Stay safe online. 🛡️</p>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

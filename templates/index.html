@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeSurf – Protect Yourself from Phishing and Spam</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- ── Navbar ── -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <span class="shield-icon">🛡️</span>
+            SafeSurf
+        </div>
+        <ul class="navbar-links">
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/url-checker">URL Checker</a></li>
+            <li><a href="/email-checker">Email Checker</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <div class="navbar-auth">
+            <a href="/login" class="btn-login">Login</a>
+            <a href="/signup" class="btn-signup">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- ── Hero Section ── -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Protect Yourself from Phishing and Spam</h1>
+            <p>Stay safe online with SafeSurf's advanced detection system.
+               Scan URLs and analyze emails for potential threats in real-time.</p>
+            <div class="hero-buttons">
+                <a href="/url-checker" class="btn-primary">🔍 Check URL</a>
+                <a href="/email-checker" class="btn-secondary">✉️ Analyze Email</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- Free stock image of cybersecurity/padlock -->
+            <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600&q=80"
+                 alt="Cybersecurity protection"
+                 onerror="this.src='https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80'">
+            <div class="protected-badge">🛡️ Protected</div>
+        </div>
+    </section>
+
+    <!-- ── Features Section ── -->
+    <section class="features" id="about">
+        <h2>How SafeSurf Protects You</h2>
+        <p class="subtitle">Our rule-based detection engine checks multiple threat indicators instantly.</p>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🔗</div>
+                <h3>URL Phishing Detection</h3>
+                <p>Checks for suspicious keywords, IP addresses, @ symbols, HTTP usage,
+                   and unusual domain patterns commonly used in phishing attacks.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📧</div>
+                <h3>Spam Email Analysis</h3>
+                <p>Scans email content for spam phrases, urgency tactics, fake reward language,
+                   and requests for sensitive personal information.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Instant Results</h3>
+                <p>Get real-time analysis with a clear verdict — Safe, Suspicious, or Malicious —
+                   along with detailed reasons explaining the detection.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer class="footer">
+        <p>© 2026 SafeSurf. Built for academic purposes. Stay safe online. 🛡️</p>
+    </footer>
+
+</body>
+</html>
